@@ -6,6 +6,6 @@ on:
   workflow_dispatch:
 jobs:
   call-workflow-in-another-repo:
-    uses: raghudevopsb05/roboshop-github-actions/.github/workflows/ci-main.yml@main
+    uses: raghudevopsb85/roboshop-github-actions/.github/workflows/ci-main.yml@main
 
 
