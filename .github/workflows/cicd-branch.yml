@@ -1,8 +1,9 @@
 name: CICD - Branch
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      - 'main'
+
   workflow_dispatch:
 jobs:
   reuse:
