@@ -1,0 +1,20 @@
+name: CICD - Main
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+#   reuse:
+#     uses: raghudevopsb85/roboshop-github-actions/.github/workflows/ci-main.yml@main
+#     with:
+#       app_type: nodejs
+
+  java:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo Hello, world!
