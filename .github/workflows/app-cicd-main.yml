@@ -13,7 +13,6 @@ jobs:
 
   java:
     runs-on: self-hosted
-    needs: build
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
